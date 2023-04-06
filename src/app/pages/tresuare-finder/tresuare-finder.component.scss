@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    margin-right: 1rem;
+  }
+  
+  input[type="number"] {
+    width: 5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 0.5rem;
+  }
+  
+  img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    opacity: 0.8;
+  }
+  

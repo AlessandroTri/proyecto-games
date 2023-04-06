@@ -1,0 +1,15 @@
+<div>
+    <p>timer:{{contador}}</p>
+    <p>puntos:{{puntos}}</p>
+    <button (click)="starting()">Start</button>
+</div>
+
+
+<div class="game">
+    <div class="fila" *ngFor="let fila of fils; let f = index">
+        <div class="columna" *ngFor=" let column of columns; let c = index">
+            <img *ngIf="diglet" src="{{imgDiglet}}" />
+            <img [src]="imageSrc[f][c]" (click)="sumar(f,c)"/>
+        </div>
+    </div>
+</div>

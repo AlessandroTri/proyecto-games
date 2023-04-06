@@ -1,0 +1,10 @@
+<section class="cards-container">
+  <div class="reinicio">
+  <button class="init" (click)="reset()">Inicio</button>
+</div>
+  <div *ngFor="let card of cardArray">
+    <div [class.flipped]="card.isFlipped" class="card" (click)="flipCard(card)" >
+    <img src="{{card.isFlipped ? card.img : '/assets/universe.svg'}}" alt="universe">
+  </div>
+</div>
+</section>

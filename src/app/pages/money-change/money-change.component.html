@@ -1,0 +1,20 @@
+<div class="container_padre">
+
+    <h1>Currency Exchange</h1>
+    <input type="number" placeholder="{{change === 0 ? '' : change}}" [(ngModel)]="change" />
+    <h2>Select Money</h2>
+
+    <div class="container_hijo">
+        <select class="selection" *ngIf="exchange" (change)="selectChange($event)" [(ngModel)]="selectExchange">
+            <option *ngFor="let i of exchange" [value]="i.name">{{i.name}}</option>
+        </select>
+
+        <div class="changet" *ngIf="exchange">
+            <div class="coin" *ngFor="let index of exchange">
+                <div class="object">{{index.name}}</div>
+                <div class="object">{{index.value * change}}</div>
+            </div>
+
+        </div>
+    </div>
+</div>
